@@ -31,6 +31,7 @@ k3d create cluster
 ## Resources
 
 - [pnpm workspaces](https://blog.nrwl.io/setup-a-monorepo-with-pnpm-workspaces-and-speed-it-up-with-nx-bc5d97258a7e)
+- [pnpm base setup](https://adamcoster.com/blog/pnpm-config)
 
 - [Container: Docker]()
   The primitives
