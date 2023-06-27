@@ -32,6 +32,7 @@ k3d create cluster
 
 - [pnpm workspaces](https://blog.nrwl.io/setup-a-monorepo-with-pnpm-workspaces-and-speed-it-up-with-nx-bc5d97258a7e)
 - [pnpm base setup](https://adamcoster.com/blog/pnpm-config)
+- [pnpm fetch, optimized containerization](https://pnpm.io/cli/fetch)
 
 - [Container: Docker]()
   The primitives
@@ -51,3 +52,15 @@ k3d create cluster
 - TechWorld with Nana
   - [Web Application with a Database](https://www.youtube.com/watch?v=EQNO_kM96Mo)
     Reminder. Leave the persistance of information you do not want to lose to an experienced 3rd party.
+
+
+## Lessons learned
+
+### #1
+- Lesson:
+  Building Containers in a monorepo is not trivial
+- Solution
+  Do not bother to extract dependencies that are used when building into root workspace.
+  Formatter (prettier) is fine, Linter (ESLint) might be
+- Caveats
+  Find some other way to controll dependency version differences in packages
