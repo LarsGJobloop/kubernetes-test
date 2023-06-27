@@ -1,5 +1,14 @@
 # Kubernetes Setup
 
+## Content
+
+- [Design](#design)
+  - [Application](#application)
+  - [Administration](#administration)
+- [Steps](#steps)
+- [Resources](#resources)
+- [Lessons learned](#lessons-learned)
+
 ## Design
 
 Mind this is focused on learning DevOps/Platform Engineering/GitOps+++.
