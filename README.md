@@ -30,6 +30,8 @@ k3d create cluster
 
 ## Resources
 
+- [pnpm workspaces](https://blog.nrwl.io/setup-a-monorepo-with-pnpm-workspaces-and-speed-it-up-with-nx-bc5d97258a7e)
+
 - [Container: Docker]()
   The primitives
 - [Container Engine: ???]()
