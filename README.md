@@ -63,3 +63,13 @@ k3d create cluster
   Formatter (prettier) is fine, Linter (ESLint) might be
 - Caveats
   Find some other way to controll dependency version differences in packages
+
+### #2
+- Lesson:
+  Having tool split up configs into multiple files is not the best when they need to be included in the building of containers
+- Solution
+  Copy each required config into the container.
+  Avoid further splitting up configs. Possibly look into (/create) tooling for combining configs.
+- Thoughts
+  Inheritance based configs are nice in monorepos. I do not see any way to combine the requirements of container specifications
+  with that niceness outside of introducing yet another tool.
