@@ -53,7 +53,6 @@ k3d create cluster
   - [Web Application with a Database](https://www.youtube.com/watch?v=EQNO_kM96Mo)
     Reminder. Leave the persistance of information you do not want to lose to an experienced 3rd party.
 
-
 ## Lessons learned
 
 ### #1
