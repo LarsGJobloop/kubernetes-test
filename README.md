@@ -1,7 +1,32 @@
-# Steps to setup a Kubernetes Cluster
+# Kubernetes Setup
+
+## Design
+
+Mind this is focused on learning DevOps/Platform Engineering/GitOps+++.
+Which means that the design is going to be skewed,
+with the application itself there to just provide obstacles to overcome.
+
+### Application
+
+- Frontend - Web, React
+- Backend - Web Server, Express
+- Database - SQL, Postgress
+
+### Administration
+
+- 
+
 
 ## Steps
 
+1. Install a container runtime. [Docker Desktop](), [Rancher]()
+2. Install a local container orchestration platform. [Docker Desktop](), [Rancher](), [k3s]()
+3. Install kubectl. [kubectl]()
+4. Create a set of specification files, so you do not have to type everything in through the command line.
+4. Create a cluster with your tool of choice.
+```sh
+k3d create cluster
+```
 
 ## Resources
 
