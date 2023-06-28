@@ -14,7 +14,8 @@ k3d image import "$IMAGE"
 
 echo "Starting up the services inside the cluster"
 # Read the spec file and use envsubst to replace any variables with env variables then apply
-cat k3s-specification/homepage-service.yaml | envsubst | kubectl apply -f -
+cat service-deployments/homepage-service.yaml | envsubst | kubectl apply -f -
 
 # Expose the port to the localhost
-kubectl port-forward svc/homepage 8000:80
+# This has to wait for the pod to start up
+# kubectl port-forward svc/homepage 8000:80
