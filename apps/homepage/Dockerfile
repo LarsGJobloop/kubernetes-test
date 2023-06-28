@@ -20,6 +20,7 @@ FROM install-build-dependencies AS build
 COPY src ./src
 COPY index.html .
 COPY public .
+COPY .env .
 RUN pnpm build
 
 # Copy into the webserver
