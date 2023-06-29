@@ -6,14 +6,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: sticky;
+  top: 0px;
 }
 .Navbar > nav > ul {
   display: flex;
   gap: 1rem;
-}
-
-.banner {
-  margin: 0px auto;
 }
 
 .Main {

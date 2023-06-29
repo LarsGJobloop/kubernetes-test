@@ -1,36 +1,23 @@
-import "./App.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import { LayoutBase } from "./layouts/LayoutBase/LayoutBase";
+import { LandingPage } from "./routes";
 
 function App() {
   return (
-    <div className="App flex-col">
-      <header className="Navbar">
-        <a href="/">Logo</a>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LayoutBase />}>
+          <Route index element={<LandingPage />} />
+        </Route>
 
-        <nav>
-          <ul>
-            <li>
-              <a href="#top">Top</a>
-            </li>
-            <li>
-              <a href="#mid">Mid</a>
-            </li>
-            <li>
-              <a href="#bot">Bottom</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <section className="banner">
-        <h1>{import.meta.env.VITE_APP_TITLE}</h1>
-      </section>
-
-      <main className="Main flex-col"></main>
-
-      <footer className="Footer flex-col">
-        <h2>&copy; Lars Gunnar</h2>
-      </footer>
-    </div>
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </Router>
   );
 }
 
