@@ -49,6 +49,7 @@ k3d create cluster
 
 - [Container: Docker]()<br>
   The primitives
+  - [Dockerfile advice](https://www.docker.com/blog/9-tips-for-containerizing-your-node-js-application/)
 - [Container Engine: ???]()<br>
   Running the individual bits
 - Container Orchestrator<br>
